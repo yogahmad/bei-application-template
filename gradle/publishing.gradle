@@ -1,0 +1,12 @@
+apply plugin: "com.traveloka.common.gradle.base-library"
+
+publishing {
+    repositories {
+        maven {
+            url "${beiartf_url}"
+            authentication {
+                awsIm(AwsImAuthentication)
+            }
+        }
+    }
+}
