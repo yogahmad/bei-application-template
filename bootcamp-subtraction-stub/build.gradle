@@ -1,0 +1,22 @@
+plugins {
+    id 'java'
+}
+
+apply plugin: "com.traveloka.common.gradle.base-library"
+apply from: "$rootDir/gradle/publishing.gradle"
+group 'com.traveloka.bootcamp.subtraction.component'
+version 'unspecified'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+    implementation project(":bootcamp-subtraction-api")
+}
+
+test {
+    useJUnitPlatform()
+}
