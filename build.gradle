@@ -69,7 +69,7 @@ subprojects {
         toolVersion "8.32"
         configFile rootProject.file("gradle/config/checkstyle.xml")
         configProperties = [
-            "baseDir": projectDir
+                "baseDir": projectDir
         ]
     }
 

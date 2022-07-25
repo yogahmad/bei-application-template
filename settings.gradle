@@ -10,3 +10,16 @@ def includeSubdirectories() {
 }
 
 includeSubdirectories()
+include 'bootcamp-addition-api'
+include 'bootcamp-addition-impl'
+include 'bootcamp-addition-rpc'
+include 'bootcamp-subtraction-api'
+include 'bootcamp-subtraction-impl'
+include 'bootcamp-subtraction-rpc'
+include 'bootcamp-arithmetic-service'
+include 'bootcamp-calculator-api'
+include 'bootcamp-calculator-impl'
+include 'bootcamp-addition-stub'
+include 'bootcamp-subtraction-stub'
+include 'bootcamp-calculator-service'
+

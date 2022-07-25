@@ -1,0 +1,25 @@
+plugins {
+    id 'java'
+}
+
+group 'com.traveloka.bootcamp.calculator'
+version 'unspecified'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation project(":bootcamp-addition-api")
+    implementation project(":bootcamp-subtraction-api")
+    implementation project(":bootcamp-calculator-api")
+
+    testImplementation project(":bootcamp-addition-stub")
+    testImplementation project(":bootcamp-subtraction-stub")
+
+    testImplementation "org.testng:testng:6.14.3"
+}
+
+test {
+    useJUnitPlatform()
+}
