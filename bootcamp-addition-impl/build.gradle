@@ -1,0 +1,23 @@
+plugins {
+    id 'java'
+}
+
+apply plugin: "com.traveloka.common.gradle.base-library"
+
+group 'com.traveloka.bootcamp.addition'
+version 'unspecified'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.2'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.2'
+    implementation project(":bootcamp-addition-api")
+    testImplementation "org.testng:testng:6.14.3"
+}
+
+test {
+    useJUnitPlatform()
+}
